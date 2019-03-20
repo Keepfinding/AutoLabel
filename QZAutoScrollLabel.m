@@ -94,7 +94,6 @@ static void each_object(NSArray *objects, void (^block)(id object)) {
 // For autolayout
 - (void)setBounds:(CGRect)bounds {
     [super setBounds:bounds];
-
     [self didChangeFrame];
 }
 

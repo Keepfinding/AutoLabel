@@ -7,14 +7,13 @@
 
 #import <UIKit/UIKit.h>
 
-/// Specifies the direction of the scroll
+/// 滚动方向枚举
 typedef NS_ENUM(NSInteger, QZAutoScrollDirection) {
     QZAutoScrollDirectionRight,
     QZAutoScrollDirectionLeft
 };
 
 @interface QZAutoScrollLabel : UIView <UIScrollViewDelegate>
-
 @property (nonatomic) QZAutoScrollDirection scrollDirection;
 /// Scroll speed in pixels per second, defaults to 30
 @property (nonatomic) float scrollSpeed;
